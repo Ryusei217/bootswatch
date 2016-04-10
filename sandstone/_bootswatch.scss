@@ -1,8 +1,9 @@
-// Sandstone 3.3.1
+// Sandstone 3.3.5
 // Bootswatch
 // -----------------------------------------------------
 
-@import url("//fonts.googleapis.com/css?family=Roboto:400,500");
+$web-font-path: "https://fonts.googleapis.com/css?family=Roboto:400,500" !default;
+@import url($web-font-path);
 
 // Navbar =====================================================================
 
@@ -175,10 +176,13 @@ input,
   @include box-shadow(none);
 
   .panel-heading,
-  .panel-title,
-  .panel-footer {
+  .panel-title {
     @extend .sandstone;
     color: #fff;
+  }
+
+  .panel-footer {
+    @extend .sandstone;
   }
 
   &-default {
